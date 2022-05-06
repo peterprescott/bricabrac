@@ -24,3 +24,20 @@ treated just as cells in a notebook they are correctly ordered.
 
 3. It also comments out any `import from` statements referring to other
 modules in the same subpackage.
+
+You can install it from this repo:
+
+```
+pip install git+https://github.com/peterprescott/bricabrac
+```
+
+Then navigate to the subpackage you and your team are working on, and
+run `bricabrac` in your terminal.
+
+```
+cd $YOUR_SUBPACKAGE
+bricabrac
+```
+
+and it will compile all the modules in that folder into a DataBricks
+notebook named `_DBND_{subpackage_name}.py`.
